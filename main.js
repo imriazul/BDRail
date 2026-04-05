@@ -26,11 +26,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const trainSelect = document.getElementById('train-select');
   setupTrainAutocomplete('train-input', 'train-dropdown', 'train-wrapper', 'train-select');
+  setupTrainClearButton('train-input', 'train-clear-btn', 'train-dropdown', 'train-select');
   loadTrainSchedules(trainSelect);
 
   setupAutocomplete('from-input', 'from-dropdown', 'from-wrapper', 'to-input');
   setupAutocomplete('to-input', 'to-dropdown', 'to-wrapper', 'from-input');
   loadStations();
+
+  const dateInput = document.getElementById('date-input');
+  setupDatePickerOpen(dateInput);
 
   document.getElementById('search-form').addEventListener('submit', handleSearch);
 
@@ -40,6 +44,48 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // --- FUNCTIONALITY ---
+
+function setupDatePickerOpen(dateInput) {
+  if (!dateInput) return;
+  if (typeof dateInput.showPicker !== 'function') return;
+
+  function openPicker() {
+    try {
+      dateInput.showPicker();
+    } catch (e) {}
+  }
+
+  dateInput.addEventListener('click', openPicker);
+  dateInput.addEventListener('focus', openPicker);
+}
+
+function updateClearButtonVisibility(input, button) {
+  if (!input || !button) return;
+  if (input.value.trim()) button.classList.remove('hidden');
+  else button.classList.add('hidden');
+}
+
+function setupTrainClearButton(inputId, buttonId, dropdownId, selectId) {
+  const input = document.getElementById(inputId);
+  const button = document.getElementById(buttonId);
+  const dropdown = dropdownId ? document.getElementById(dropdownId) : null;
+  const select = selectId ? document.getElementById(selectId) : null;
+
+  if (!input || !button) return;
+
+  updateClearButtonVisibility(input, button);
+
+  input.addEventListener('input', () => updateClearButtonVisibility(input, button));
+
+  button.addEventListener('click', () => {
+    input.value = '';
+    if (dropdown) dropdown.classList.add('hidden');
+    if (select) select.value = '';
+    updateClearButtonVisibility(input, button);
+    lucide.createIcons();
+    input.focus();
+  });
+}
 
 function setupTrainAutocomplete(inputId, dropdownId, wrapperId, selectId) {
   const input = document.getElementById(inputId);
@@ -71,6 +117,7 @@ function setupTrainAutocomplete(inputId, dropdownId, wrapperId, selectId) {
       li.addEventListener('mousedown', () => {
         input.value = train.name;
         dropdown.classList.add('hidden');
+        updateClearButtonVisibility(input, document.getElementById('train-clear-btn'));
         if (select) {
           select.value = train.id;
           select.dispatchEvent(new Event('change'));
@@ -144,6 +191,8 @@ async function loadTrainSchedules(trainSelect) {
     } else {
       renderTrainSchedule('');
     }
+
+    updateClearButtonVisibility(trainInput, document.getElementById('train-clear-btn'));
   } catch (err) {
     TRAIN_SCHEDULES_JSON = [];
     if (trainSelect) trainSelect.innerHTML = '';
