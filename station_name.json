@@ -1,0 +1,1843 @@
+[
+    {
+      "city_id": 763,
+      "city_name": "Abdulpur",
+      "city_name_bn": "আব্দুলপুর",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    },
+    {
+      "city_id": 584,
+      "city_name": "Akhanagar",
+      "city_name_bn": "আখানগর",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 584,
+      "city_name": "Aditmari",
+      "city_name_bn": "আদিতমারী",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 852,
+      "city_name": "Adv. Motiur Rahman",
+      "city_name_bn": "অ্যাডভোকেট মতিউর  রহমান",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 762,
+      "city_name": "Ahsanganj",
+      "city_name_bn": "আহসানগঞ্জ",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    },
+    {
+      "city_id": 809,
+      "city_name": "Akhaura",
+      "city_name_bn": "আখাউড়া",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    },
+    {
+      "city_id": 242,
+      "city_name": "Akkelpur",
+      "city_name_bn": "আক্কেলপুর",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    },
+    {
+      "city_id": 592,
+      "city_name": "Alamdanga",
+      "city_name_bn": "আলমডাঙ্গা",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    },
+    {
+      "city_id": 200,
+      "city_name": "Amirabad ",
+      "city_name_bn": "আমিরাবাদ",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 867,
+      "city_name": "Amnura",
+      "city_name_bn": "আমনুরা",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 867,
+      "city_name": "Amnura_Bypass",
+      "city_name_bn": "আমনুরা বাইপাস",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 775,
+      "city_name": "Arani",
+      "city_name_bn": "আড়ানী",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 178,
+      "city_name": "Ashuganj",
+      "city_name_bn": "আশুগঞ্জ",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    },
+    {
+      "city_id": 864,
+      "city_name": "Atharabari",
+      "city_name_bn": "আঠারবাড়ী",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 817,
+      "city_name": "Azampur",
+      "city_name_bn": "আজমপুর",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    },
+    {
+      "city_id": 777,
+      "city_name": "Azim Nagar",
+      "city_name_bn": "আজিম নগর",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 769,
+      "city_name": "Panchagarh",
+      "city_name_bn": "",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    },
+    {
+      "city_id": 769,
+      "city_name": "Patiya",
+      "city_name_bn": "",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    },
+    {
+      "city_id": 769,
+      "city_name": "Ramu",
+      "city_name_bn": "",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    },
+    {
+      "city_id": 523,
+      "city_name": "Badarganj",
+      "city_name_bn": null,
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 523,
+      "city_name": "Phultala",
+      "city_name_bn": null,
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 790,
+      "city_name": "Badherhat",
+      "city_name_bn": "বাঁধেরহাট",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 878,
+      "city_name": "Badiakhali",
+      "city_name_bn": "বাদিয়াখালী",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 807,
+      "city_name": "Baharpur",
+      "city_name_bn": "বহরপুর",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 843,
+      "city_name": "Bajitpur",
+      "city_name_bn": "বাজিতপুর",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    },
+    {
+      "city_id": 823,
+      "city_name": "Bajra",
+      "city_name_bn": "বজরা",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 772,
+      "city_name": "Bamondanga",
+      "city_name_bn": "বামনডাঙ্গা",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 110,
+      "city_name": "Banani",
+      "city_name_bn": "বনানী",
+      "is_enable_for_web": 0,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 833,
+      "city_name": "Baramchal",
+      "city_name_bn": "বরমচাল",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 857,
+      "city_name": "Barhatta",
+      "city_name_bn": "বারহাট্টা",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    },
+    {
+      "city_id": 800,
+      "city_name": "Barkhata",
+      "city_name_bn": "বারকাঁথা",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 800,
+      "city_name": "Baura",
+      "city_name_bn": "বাউড়া",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 800,
+      "city_name": "Birol",
+      "city_name_bn": "",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 800,
+      "city_name": "Bhotmari",
+      "city_name_bn": "",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 759,
+      "city_name": "Satkania",
+      "city_name_bn": "",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    },
+    {
+      "city_id": 759,
+      "city_name": "Shibchar",
+      "city_name_bn": "",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    },
+    {
+      "city_id": 759,
+      "city_name": "Sholoshohor",
+      "city_name_bn": "",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    },
+    {
+      "city_id": 759,
+      "city_name": "Tushbhandar",
+      "city_name_bn": "",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    },
+    {
+      "city_id": 759,
+      "city_name": "Singia",
+      "city_name_bn": "",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    },
+    {
+      "city_id": 782,
+      "city_name": "Teesta_Junction",
+      "city_name_bn": "",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 782,
+      "city_name": "Sultanpur",
+      "city_name_bn": "",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 782,
+      "city_name": "Sitlai",
+      "city_name_bn": "",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 782,
+      "city_name": "SOYDABAD",
+      "city_name_bn": "সায়দাবাদ",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 782,
+      "city_name": "Shyampur",
+      "city_name_bn": "",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 82,
+      "city_name": "Benapole",
+      "city_name_bn": "বেনাপোল",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    },
+      {
+      "city_id": 82,
+      "city_name": "Chapainawabganj",
+      "city_name_bn": "",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    },
+    {
+      "city_id": 82,
+      "city_name": "Chulkati_Bazar",
+      "city_name_bn": "",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 101010,
+      "city_name": "Chakaria",
+      "city_name_bn": "",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    },
+    {
+      "city_id": 810,
+      "city_name": "Bhairab_Bazar",
+      "city_name_bn": "ভৈরব বাজার",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    },
+    {
+      "city_id": 354,
+      "city_name": "Bhanga",
+      "city_name_bn": "ভাঙ্গা",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 887,
+      "city_name": "Bhanga_Junction",
+      "city_name_bn": "ভাঙ্গা জংশন",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 819,
+      "city_name": "Bhanugach",
+      "city_name_bn": "ভানুগাছ",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    },
+    {
+      "city_id": 311,
+      "city_name": "Bhatiary",
+      "city_name_bn": null,
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 239,
+      "city_name": "Bheramara",
+      "city_name_bn": "ভেড়ামারা",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    },
+    {
+      "city_id": 877,
+      "city_name": "Bhomradah",
+      "city_name_bn": "ভোমরাদহ",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 850,
+      "city_name": "Bhuapur",
+      "city_name_bn": "ভুঞাপুর",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 859,
+      "city_name": "Bidyaganj",
+      "city_name_bn": "বিদ্যাগঞ্জ",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 757,
+      "city_name": "Biman_Bandar",
+      "city_name_bn": "বিমান_বন্দর",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    },
+    {
+      "city_id": 5,
+      "city_name": "Birampur",
+      "city_name_bn": "বিরামপুর",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    },
+    {
+      "city_id": 806,
+      "city_name": "Boalmari_Bazar",
+      "city_name_bn": "বোয়ালমারী বাজার",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 10,
+      "city_name": "Bogura",
+      "city_name_bn": "বগুড়া",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    },
+    {
+      "city_id": 881,
+      "city_name": "Bolakhal",
+      "city_name_bn": "বলাখাল",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 766,
+      "city_name": "Bonar_Para",
+      "city_name_bn": "বোনারপাড়া",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    },
+    {
+      "city_id": 761,
+      "city_name": "Boral_Bridge",
+      "city_name_bn": "বড়াল_ব্রিজ",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    },
+    {
+      "city_id": 803,
+      "city_name": "Borashi",
+      "city_name_bn": "বোড়াশী",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 264,
+      "city_name": "Brahmanbaria",
+      "city_name_bn": "ব্রাহ্মণবাড়িয়া",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    },
+    {
+      "city_id": 43,
+      "city_name": "Burimari",
+      "city_name_bn": null,
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 589,
+      "city_name": "Chandpur",
+      "city_name_bn": "চাঁদপুর",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    },
+    {
+      "city_id": 839,
+      "city_name": "Chandpur_Court",
+      "city_name_bn": "চাঁদপুর কোর্ট",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 310,
+      "city_name": "Chandradighalia",
+      "city_name_bn": null,
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 113,
+      "city_name": "Chapai Nawabganj",
+      "city_name_bn": "চাঁপাই নবাবগঞ্জ",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    },
+    {
+      "city_id": 805,
+      "city_name": "Chapta",
+      "city_name_bn": "চাপতা",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 805,
+      "city_name": "Cox's Bazar",
+      "city_name_bn": "",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    },
+    {
+      "city_id": 429,
+      "city_name": "Chatmohar",
+      "city_name_bn": "চাটমোহর",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    },
+    {
+      "city_id": 47,
+      "city_name": "Chattogram",
+      "city_name_bn": "চট্টগ্রাম",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    },
+    {
+      "city_id": 21,
+      "city_name": "Chilahati",
+      "city_name_bn": "চিলাহাটি",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    },
+    {
+      "city_id": 48,
+      "city_name": "Chirirbandar",
+      "city_name_bn": null,
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 835,
+      "city_name": "Chitoshi_Road",
+      "city_name_bn": "চিতোষী রোড",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 804,
+      "city_name": "Choto Bahirbag",
+      "city_name_bn": "ছোট বাহিরবাগ",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 822,
+      "city_name": "Choumuhani",
+      "city_name_bn": "চৌমুহনী",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 515,
+      "city_name": "Chuadanga",
+      "city_name_bn": "চুয়াডাঙ্গা",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    },
+    {
+      "city_id": 209,
+      "city_name": "Cumilla",
+      "city_name_bn": "কুমিল্লা",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    },
+    {
+      "city_id": 765,
+      "city_name": "Darshana_Halt",
+      "city_name_bn": "দর্শনা হল্ট",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    },
+    {
+      "city_id": 580,
+      "city_name": "Dashuria",
+      "city_name_bn": null,
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 759,
+      "city_name": "Ibrahimabad",
+      "city_name_bn": null,
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    },
+    {
+      "city_id": 362,
+      "city_name": "Daulatpur",
+      "city_name_bn": null,
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 362,
+      "city_name": "ISLAMABAD",
+      "city_name_bn": null,
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    },
+    {
+      "city_id": 362,
+      "city_name": "HARBANG",
+      "city_name_bn": null,
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 362,
+      "city_name": "GOMDANDI",
+      "city_name_bn": null,
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    },
+    {
+      "city_id": 362,
+      "city_name": "Dohazari",
+      "city_name_bn": null,
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    },
+    {
+      "city_id": 362,
+      "city_name": "Dulahazara",
+      "city_name_bn": null,
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 816,
+      "city_name": "Dewanganj_Bazar",
+      "city_name_bn": "দেওয়ানগঞ্জ বাজার ",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    },
+    {
+      "city_id": 1,
+      "city_name": "Dhaka",
+      "city_name_bn": "ঢাকা",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    },
+    {
+      "city_id": 861,
+      "city_name": "Dhaka_Cantonment",
+      "city_name_bn": "ঢাকা সেনানিবাস",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    },
+    {
+      "city_id": 789,
+      "city_name": "Dhalarchar",
+      "city_name_bn": "ঢালারচর",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 2,
+      "city_name": "Dinajpur",
+      "city_name_bn": "দিনাজপুর",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    },
+    {
+      "city_id": 20,
+      "city_name": "Domar",
+      "city_name_bn": "ডোমার",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    },
+    {
+      "city_id": 793,
+      "city_name": "Dublia",
+      "city_name_bn": "দুবলিয়া",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 184,
+      "city_name": "Faridpur",
+      "city_name_bn": "ফরিদপুর",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 258,
+      "city_name": "Feni",
+      "city_name_bn": "ফেনী",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    },
+    {
+      "city_id": 4,
+      "city_name": "Fulbari",
+      "city_name_bn": "ফুলবাড়ি",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    },
+    {
+      "city_id": 846,
+      "city_name": "Gachihata",
+      "city_name_bn": "গচিহাটা",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 811,
+      "city_name": "Gafargaon",
+      "city_name_bn": "গফরগাঁও",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    },
+    {
+      "city_id": 105,
+      "city_name": "Gaibandha",
+      "city_name_bn": "গাইবান্ধা",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    },
+    {
+      "city_id": 802,
+      "city_name": "Gobra",
+      "city_name_bn": "গোবরা",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 268,
+      "city_name": "Gopalganj",
+      "city_name_bn": "গোপালগঞ্জ",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 853,
+      "city_name": "Gouripur_Myn",
+      "city_name_bn": "গৌরীপুর_ময়মনসিং",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    },
+    {
+      "city_id": 808,
+      "city_name": "Gunabati",
+      "city_name_bn": "গুণবতী",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 837,
+      "city_name": "Hajiganj",
+      "city_name_bn": "হাজীগঞ্জ",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 873,
+      "city_name": "Haldibari",
+      "city_name_bn": "হলদিবাড়ী",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 828,
+      "city_name": "Harashpur",
+      "city_name_bn": "হরষপুর",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 834,
+      "city_name": "Hasanpur",
+      "city_name_bn": "হাসানপুর",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 41,
+      "city_name": "Hatibandha",
+      "city_name_bn": null,
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 851,
+      "city_name": "Hemnagar",
+      "city_name_bn": "হেমনগর",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 781,
+      "city_name": "Hi-Tech City",
+      "city_name_bn": "হাই-টেক সিটি",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 80,
+      "city_name": "Hili",
+      "city_name_bn": null,
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 72,
+      "city_name": "Ishwardi",
+      "city_name_bn": "ঈশ্বরদী",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    },
+    {
+      "city_id": 767,
+      "city_name": "Ishwardi Bypass",
+      "city_name_bn": "ঈশ্বরদী বাইপাস",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    },
+    {
+      "city_id": 815,
+      "city_name": "Islampur_Bazar",
+      "city_name_bn": "ইসলামপুর বাজার",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    },
+    {
+      "city_id": 884,
+      "city_name": "Jaforshahi",
+      "city_name_bn": "জাফরশাহী",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 604,
+      "city_name": "Jamalganj",
+      "city_name_bn": null,
+      "is_enable_for_web": 0,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 813,
+      "city_name": "Jamalpur_Town",
+      "city_name_bn": "জামালপুর টাউন",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    },
+    {
+      "city_id": 774,
+      "city_name": "Jamtail",
+      "city_name_bn": "জামতৈল",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 51,
+      "city_name": "Jashore",
+      "city_name_bn": "যশোর",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    },
+    {
+      "city_id": null,
+      "city_name": "Jagannathgonj_Bazar",
+      "city_name_bn": "",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 227,
+      "city_name": "Jhikargacha",
+      "city_name_bn": "ঝিকরগাছা",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    },
+    {
+      "city_id": 758,
+      "city_name": "Joydebpur",
+      "city_name_bn": "জয়দেবপুর",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    },
+    {
+      "city_id": 76,
+      "city_name": "Joypurhat",
+      "city_name_bn": "জয়পুরহাট",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    },
+    {
+      "city_id": 869,
+      "city_name": "Kakonhat",
+      "city_name_bn": "কাঁকনহাট",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 785,
+      "city_name": "Kalukhali",
+      "city_name_bn": "কালুখালী",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 798,
+      "city_name": "Kankina",
+      "city_name_bn": "কাঁকিনা",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 568,
+      "city_name": "Kashiani",
+      "city_name_bn": "কাশিয়ানী",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 356,
+      "city_name": "Kashinathpur",
+      "city_name_bn": null,
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 387,
+      "city_name": "Kaunia",
+      "city_name_bn": "কাউনিয়া",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    },
+    {
+      "city_id": 885,
+      "city_name": "Kendua_Bazar",
+      "city_name_bn": "কেন্দুয়াবাজার",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 37,
+      "city_name": "Khoksha",
+      "city_name_bn": null,
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 49,
+      "city_name": "Kholahati",
+      "city_name_bn": null,
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 174,
+      "city_name": "Khulna",
+      "city_name_bn": "খুলনা",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    },
+    {
+      "city_id": 26,
+      "city_name": "Kishorganj",
+      "city_name_bn": "কিশোরগঞ্জ",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    },
+    {
+      "city_id": 768,
+      "city_name": "Kismat",
+      "city_name_bn": "কিসমত",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 81,
+      "city_name": "Kolkata",
+      "city_name_bn": "কলকাতা",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    },
+    {
+      "city_id": 54,
+      "city_name": "Kotchandpur",
+      "city_name_bn": "কোর্টচাঁদপুর",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    },
+    {
+      "city_id": 290,
+      "city_name": "Kulaura",
+      "city_name_bn": "কুলাউড়া",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    },
+    {
+      "city_id": 842,
+      "city_name": "Kuliarchar",
+      "city_name_bn": "কুলিয়ারচর",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    },
+    {
+      "city_id": 39,
+      "city_name": "Kumarkhali",
+      "city_name_bn": null,
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 412,
+      "city_name": "Kumira",
+      "city_name_bn": null,
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 13,
+      "city_name": "Kurigram",
+      "city_name_bn": "কুড়িগ্রাম",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    },
+    {
+      "city_id": 787,
+      "city_name": "Kushtia Court",
+      "city_name_bn": "কুষ্টিয়াকোর্ট ",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 296,
+      "city_name": "Laksam",
+      "city_name_bn": "লাকসাম",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    },
+    {
+      "city_id": 40,
+      "city_name": "Lalmonirhat",
+      "city_name_bn": "লালমনিরহাট",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    },
+    {
+      "city_id": 870,
+      "city_name": "Lokmanpur",
+      "city_name_bn": "লোকমানপুর",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 868,
+      "city_name": "Lolitnagar",
+      "city_name_bn": "ললিতনগর",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 778,
+      "city_name": "Madhnagar",
+      "city_name_bn": "মাধনগর",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 544,
+      "city_name": "Madhukhali",
+      "city_name_bn": "মধুখালী",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 797,
+      "city_name": "Mahimaganj",
+      "city_name_bn": "মহিমাগঞ্জ ",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 821,
+      "city_name": "Maijdi Court",
+      "city_name_bn": "মাইজদী কোর্ট",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 820,
+      "city_name": "Maijgaon",
+      "city_name_bn": "মাইজগাঁও ",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    },
+    {
+      "city_id": 796,
+      "city_name": "Majhgram",
+      "city_name_bn": "মাঝগ্রাম",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 845,
+      "city_name": "Manikkhali",
+      "city_name_bn": "মানিকখালী",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 886,
+      "city_name": "Mawa",
+      "city_name_bn": "মাওয়া",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 836,
+      "city_name": "Meher",
+      "city_name_bn": "মেহের",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 814,
+      "city_name": "Melandah_Bazar",
+      "city_name_bn": "মেলান্দহ বাজার",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    },
+    {
+      "city_id": 849,
+      "city_name": "Methikanda",
+      "city_name_bn": "মেথিকান্দা",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 786,
+      "city_name": "Mirpur",
+      "city_name_bn": "মিরপুর",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 749,
+      "city_name": "Mirzapur",
+      "city_name_bn": "মির্জাপুর",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 838,
+      "city_name": "Modhu_Road",
+      "city_name_bn": "মধুরোড ",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 652,
+      "city_name": "Mohanganj",
+      "city_name_bn": "মোহনগঞ্জ",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    },
+    {
+      "city_id": 829,
+      "city_name": "Montola",
+      "city_name_bn": "মনতলা",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 788,
+      "city_name": "Mubarakganj",
+      "city_name_bn": "মোবারকগঞ্জ",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 827,
+      "city_name": "Mukundapur",
+      "city_name_bn": "মুকুন্দপুর",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 581,
+      "city_name": "Muladhuli",
+      "city_name_bn": null,
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 75,
+      "city_name": "Mymensingh",
+      "city_name_bn": "ময়মনসিংহ",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    },
+    {
+      "city_id": 866,
+      "city_name": "Nachole",
+      "city_name_bn": "নাচোল",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 847,
+      "city_name": "Nandina",
+      "city_name_bn": "নান্দিনা",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 831,
+      "city_name": "Nangolkot",
+      "city_name_bn": "নাঙ্গলকোট",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 259,
+      "city_name": "Narayanganj",
+      "city_name_bn": "নারায়ণগঞ্জ",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 244,
+      "city_name": "Narsingdi",
+      "city_name_bn": "নরসিংদী",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    },
+    {
+      "city_id": 874,
+      "city_name": "Narundi",
+      "city_name_bn": "নরুন্দি",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 825,
+      "city_name": "Natherpetua",
+      "city_name_bn": "নাথেরপেটুয়া",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 226,
+      "city_name": "Natore",
+      "city_name_bn": "নাটোর",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    },
+    {
+      "city_id": 818,
+      "city_name": "Nayapara",
+      "city_name_bn": "নয়াপাড়া",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    },
+    {
+      "city_id": 485,
+      "city_name": "Netrakona",
+      "city_name_bn": "নেত্রকোণা",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    },
+    {
+      "city_id": 872,
+      "city_name": "New Jalpaiguri",
+      "city_name_bn": "নিউ জলপাইগুড়ি ",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    },
+    {
+      "city_id": 19,
+      "city_name": "Nilphamari",
+      "city_name_bn": "নিলফামারী",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    },
+    {
+      "city_id": 332,
+      "city_name": "Noakhali",
+      "city_name_bn": "নোয়াখালী",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    },
+    {
+      "city_id": 233,
+      "city_name": "Noapara",
+      "city_name_bn": "নোয়াপাড়া",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 59,
+      "city_name": "Pabna",
+      "city_name_bn": null,
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    },
+    {
+      "city_id": 784,
+      "city_name": "Pachuria",
+      "city_name_bn": "পাচুরিয়া",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 879,
+      "city_name": "Pahartali",
+      "city_name_bn": "পাহাড়তলী",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 304,
+      "city_name": "Pakshi",
+      "city_name_bn": null,
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 79,
+      "city_name": "Panchbibi",
+      "city_name_bn": null,
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 38,
+      "city_name": "Pangsha",
+      "city_name_bn": "পাংশা",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 35,
+      "city_name": "Parbatipur",
+      "city_name_bn": "পার্বতীপুর",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    },
+    {
+      "city_id": 42,
+      "city_name": "Patgram",
+      "city_name_bn": null,
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 773,
+      "city_name": "Pirgacha",
+      "city_name_bn": "পীরগাছা",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 90,
+      "city_name": "Pirganj",
+      "city_name_bn": "পীরগঞ্জ",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    },
+    {
+      "city_id": 812,
+      "city_name": "Piyarpur",
+      "city_name_bn": "পিয়ারপুর ",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 764,
+      "city_name": "Poradaha",
+      "city_name_bn": "পোড়াদহ",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    },
+    {
+      "city_id": 783,
+      "city_name": "Pukuria",
+      "city_name_bn": "পুকুরিয়া",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 826,
+      "city_name": "Quasba",
+      "city_name_bn": "কসবা",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    },
+    {
+      "city_id": 794,
+      "city_name": "Raghabpur",
+      "city_name_bn": "রাঘবপুর",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 36,
+      "city_name": "Rajbari",
+      "city_name_bn": "রাজবাড়ী",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 112,
+      "city_name": "Rajshahi",
+      "city_name_bn": "রাজশাহী",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    },
+    {
+      "city_id": 871,
+      "city_name": "Rajshahi_Court",
+      "city_name_bn": "রাজশাহী_কোর্ট",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 7,
+      "city_name": "Rangpur",
+      "city_name_bn": "রংপুর",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    },
+    {
+      "city_id": 865,
+      "city_name": "Rohanpur",
+      "city_name_bn": "রহনপুর",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    },
+    {
+      "city_id": 583,
+      "city_name": "Ruhia",
+      "city_name_bn": null,
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 801,
+      "city_name": "Safdarpur",
+      "city_name_bn": "সাফদারপুর",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 8,
+      "city_name": "Saidpur",
+      "city_name_bn": "সৈয়দপুর",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    },
+    {
+      "city_id": 102,
+      "city_name": "Santahar",
+      "city_name_bn": "সান্তাহার",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    },
+    {
+      "city_id": 844,
+      "city_name": "Sararchar",
+      "city_name_bn": "সরারচর",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    },
+    {
+      "city_id": 776,
+      "city_name": "Sardah_Road",
+      "city_name_bn": "সরদহ_রোড",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 840,
+      "city_name": "Sarishabari",
+      "city_name_bn": "সরিষাবাড়ী",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    },
+    {
+      "city_id": 791,
+      "city_name": "Sathia_Rajapur",
+      "city_name_bn": "সাঁথিয়া_রাজাপুর",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 118,
+      "city_name": "Setabganj",
+      "city_name_bn": null,
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 760,
+      "city_name": "SH M Monsur Ali",
+      "city_name_bn": "শহীদ এম মনসুর আলী",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    },
+    {
+      "city_id": 830,
+      "city_name": "Shahaji_Bazar",
+      "city_name_bn": "শাহজীবাজার",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 880,
+      "city_name": "Shahrasti",
+      "city_name_bn": "শাহ্রাস্তি",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 882,
+      "city_name": "Shahtali",
+      "city_name_bn": "শাহ্তলী",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 177,
+      "city_name": "Shaistaganj",
+      "city_name_bn": "শায়েস্তাগঞ্জ",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    },
+    {
+      "city_id": 832,
+      "city_name": "Shamshernagar",
+      "city_name_bn": "শমসেরনগর",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    },
+    {
+      "city_id": 848,
+      "city_name": "Shashidal",
+      "city_name_bn": "শশীদল",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 111,
+      "city_name": "Shibganj",
+      "city_name_bn": null,
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 854,
+      "city_name": "Shyamgonj",
+      "city_name_bn": "শ্যামগঞ্জ",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 780,
+      "city_name": "Sirajganjraipur",
+      "city_name_bn": "সিরাজগঞ্জরায়পুর",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 779,
+      "city_name": "Sirajganj_Bazar",
+      "city_name_bn": "সিরাজগঞ্জ_বাজার",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 824,
+      "city_name": "Sonaimuri",
+      "city_name_bn": "সোনাইমুড়ী",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 771,
+      "city_name": "Sonatola",
+      "city_name_bn": "সোনাতলা",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 180,
+      "city_name": "Sreemangal",
+      "city_name_bn": "শ্রীমঙ্গল",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    },
+    {
+      "city_id": 858,
+      "city_name": "Sreepur",
+      "city_name_bn": "শ্রীপুর",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 83,
+      "city_name": "Sylhet",
+      "city_name_bn": "সিলেট",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    },
+    {
+      "city_id": 566,
+      "city_name": "Talma",
+      "city_name_bn": null,
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 770,
+      "city_name": "Talora",
+      "city_name_bn": "তালোড়া",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 34,
+      "city_name": "Tangail",
+      "city_name_bn": "টাঙ্গাইল",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    },
+    {
+      "city_id": 792,
+      "city_name": "Mongla",
+      "city_name_bn": "",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 792,
+      "city_name": "Mohammad Nagar",
+      "city_name_bn": "",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 792,
+      "city_name": "Mongalpur",
+      "city_name_bn": "",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 792,
+      "city_name": "Tantibandha",
+      "city_name_bn": "তাঁতিবান্ধা",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 792,
+      "city_name": "Padma",
+      "city_name_bn": "",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    },
+    {
+      "city_id": 792,
+      "city_name": "Nayaniburuj",
+      "city_name_bn": "",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 792,
+      "city_name": "Paksey",
+      "city_name_bn": "",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    },
+    {
+      "city_id": 792,
+      "city_name": "Padmabila",
+      "city_name_bn": "",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 792,
+      "city_name": "Narail",
+      "city_name_bn": "",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    },
+    {
+      "city_id": 792,
+      "city_name": "Naliagram",
+      "city_name_bn": "",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 792,
+      "city_name": "Mirbagh",
+      "city_name_bn": "",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 792,
+      "city_name": "Manmathapur",
+      "city_name_bn": "",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 792,
+      "city_name": "Mahendranagar",
+      "city_name_bn": "",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 792,
+      "city_name": "Janali_Hat",
+      "city_name_bn": "",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    },
+    {
+      "city_id": 792,
+      "city_name": "Lohagora",
+      "city_name_bn": "",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    },
+    {
+      "city_id": 792,
+      "city_name": "LOHAGARA",
+      "city_name_bn": "",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    },
+    {
+      "city_id": 792,
+      "city_name": "Kushtia_Court",
+      "city_name_bn": "",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    },
+    {
+      "city_id": 792,
+      "city_name": "Kaoraid",
+      "city_name_bn": "",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 792,
+      "city_name": "Kawgaon",
+      "city_name_bn": "",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 792,
+      "city_name": "Katakhali",
+      "city_name_bn": "",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 792,
+      "city_name": "Kanchan_Junction",
+      "city_name_bn": "",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 841,
+      "city_name": "Tarakandi",
+      "city_name_bn": "তারাকান্দি",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    },
+    {
+      "city_id": 795,
+      "city_name": "Tebunia",
+      "city_name_bn": "টেবুনিয়া",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 876,
+      "city_name": "Teesta Junction",
+      "city_name_bn": "তিস্তা জংশন",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 855,
+      "city_name": "Thakrokona",
+      "city_name_bn": "ঠাকুরাকোনা",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 606,
+      "city_name": "Thakurgaon_Road",
+      "city_name_bn": "ঠাকুরগাঁও_রোড",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    },
+    {
+      "city_id": 883,
+      "city_name": "Tongi",
+      "city_name_bn": "টঙ্গী",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 0
+    },
+    {
+      "city_id": 799,
+      "city_name": "Tushbandar",
+      "city_name_bn": "তুষভান্ডার",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    },
+    {
+      "city_id": 60,
+      "city_name": "Ullapara",
+      "city_name_bn": "উল্লাপাড়া",
+      "is_enable_for_web": 1,
+      "is_enable_for_from": 1
+    }
+  ]

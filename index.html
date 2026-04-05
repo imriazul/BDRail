@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bangladesh Trailways E-Ticket</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="min-h-screen bg-slate-50 font-sans">
+  
+  <!-- Navbar -->
+  <nav class="bg-white shadow-sm fixed w-full top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16">
+        <div class="flex items-center space-x-2">
+          <div class="bg-emerald-600 p-2 rounded-lg flex items-center justify-center">
+            <i data-lucide="train" class="h-6 w-6 text-white"></i>
+          </div>
+          <span class="font-bold text-xl text-slate-800 tracking-tight">BD<span class="text-emerald-600">Railway</span></span>
+        </div>
+        <div class="hidden md:flex items-center space-x-8">
+          <a href="#" class="text-emerald-600 font-semibold border-b-2 border-emerald-600 py-5">Home</a>
+          <a href="#" class="text-slate-600 hover:text-emerald-600 font-medium transition-colors">Login</a>
+          <a href="#" class="text-slate-600 hover:text-emerald-600 font-medium transition-colors">Register</a>
+          <a href="#" class="text-slate-600 hover:text-emerald-600 font-medium transition-colors">Train Information</a>
+          <a href="#" class="text-slate-600 hover:text-emerald-600 font-medium transition-colors">Contact Us</a>
+        </div>
+        <div class="flex md:hidden items-center">
+           <button class="text-slate-500 hover:text-slate-700">
+              <i data-lucide="menu" class="h-6 w-6"></i>
+           </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <div class="relative pt-16">
+    <div class="absolute inset-0 z-0 h-[400px]">
+      <div class="w-full h-full bg-gradient-to-r from-slate-900 to-emerald-900"></div>
+      <div class="absolute inset-0 bg-black opacity-40"></div>
+    </div>
+    
+    <div class="relative z-10 pt-20 pb-24 text-center px-4">
+      <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-4 tracking-tight drop-shadow-lg">
+        Bangladesh Trailways E-Ticket
+      </h1>
+      <p class="text-lg md:text-xl text-slate-200 max-w-2xl mx-auto mb-8 drop-shadow-md">
+        Safe, comfortable, and timely travel. Book your train tickets online seamlessly.
+      </p>
+    </div>
+  </div>
+
+  <!-- Core Features: Ticket Search -->
+  <div class="bg-white rounded-2xl shadow-xl p-6 md:p-8 relative z-10 -mt-16 mx-4 md:mx-auto max-w-5xl border border-slate-100">
+    <div class="flex items-center space-x-2 mb-6">
+      <i data-lucide="train" class="w-6 h-6 text-emerald-600"></i>
+      <h2 class="text-2xl font-bold text-slate-800">Book Your Ticket</h2>
+    </div>
+
+    <form id="search-form" class="space-y-6">
+      <div class="grid grid-cols-1 md:grid-cols-[1fr,auto,1fr] gap-4 items-end">
+        
+        <!-- From Autocomplete -->
+        <div class="relative w-full" id="from-wrapper">
+          <label class="block text-sm font-semibold text-slate-700 mb-1">From Station</label>
+          <div class="relative">
+            <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+              <i data-lucide="map-pin" class="h-5 w-5 text-emerald-600"></i>
+            </div>
+            <input type="text" id="from-input" class="block w-full pl-10 pr-3 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 bg-white shadow-sm text-slate-900 transition-all outline-none" placeholder="Enter Origin City" autocomplete="off">
+          </div>
+          <ul id="from-dropdown" class="hidden absolute z-10 mt-1 w-full bg-white shadow-lg max-h-60 rounded-md py-1 text-base ring-1 ring-black ring-opacity-5 overflow-auto focus:outline-none sm:text-sm"></ul>
+        </div>
+        
+        <div class="flex justify-center pb-2 md:pb-3">
+          <button type="button" onclick="handleSwap()" class="p-2 bg-emerald-50 rounded-full text-emerald-600 hover:bg-emerald-100 transition-colors border border-emerald-200" title="Swap stations">
+            <i data-lucide="arrow-right-left" class="w-5 h-5"></i>
+          </button>
+        </div>
+
+        <!-- To Autocomplete -->
+        <div class="relative w-full" id="to-wrapper">
+          <label class="block text-sm font-semibold text-slate-700 mb-1">To Station</label>
+          <div class="relative">
+            <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+              <i data-lucide="map-pin" class="h-5 w-5 text-emerald-600"></i>
+            </div>
+            <input type="text" id="to-input" class="block w-full pl-10 pr-3 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 bg-white shadow-sm text-slate-900 transition-all outline-none" placeholder="Enter Destination City" autocomplete="off">
+          </div>
+          <ul id="to-dropdown" class="hidden absolute z-10 mt-1 w-full bg-white shadow-lg max-h-60 rounded-md py-1 text-base ring-1 ring-black ring-opacity-5 overflow-auto focus:outline-none sm:text-sm"></ul>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="relative">
+          <label class="block text-sm font-semibold text-slate-700 mb-1">Date of Journey</label>
+          <div class="relative">
+            <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+              <i data-lucide="calendar" class="h-5 w-5 text-emerald-600"></i>
+            </div>
+            <input type="date" id="date-input" class="block w-full pl-10 pr-3 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 bg-white shadow-sm text-slate-900 outline-none" required>
+          </div>
+        </div>
+
+        <div class="relative">
+          <label class="block text-sm font-semibold text-slate-700 mb-1">Choose Class</label>
+          <div class="relative">
+            <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+              <i data-lucide="users" class="h-5 w-5 text-emerald-600"></i>
+            </div>
+            <select id="class-select" class="block w-full pl-10 pr-10 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 bg-white shadow-sm text-slate-900 appearance-none outline-none">
+              <!-- Options populated by JS -->
+            </select>
+            <div class="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
+              <i data-lucide="chevron-down" class="h-5 w-5 text-slate-400"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pt-4 flex justify-center md:justify-end">
+        <button type="submit" class="w-full md:w-auto bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 px-8 rounded-lg shadow-md hover:shadow-lg transition-all flex items-center justify-center space-x-2">
+          <i data-lucide="search" class="w-5 h-5"></i>
+          <span>Search Trains</span>
+        </button>
+      </div>
+    </form>
+  </div>
+
+  <!-- Train Schedule Section -->
+  <div class="max-w-5xl mx-auto my-16 px-4">
+    <div class="text-center mb-10">
+      <h2 class="text-3xl font-bold text-slate-800 mb-4">Train Information & Schedule</h2>
+      <p class="text-slate-600 max-w-2xl mx-auto">Check the complete schedule, arrival, and departure timings for your preferred trains across the country.</p>
+    </div>
+
+    <div class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden">
+      <div class="p-6 md:p-8 bg-slate-50 border-b border-slate-200 flex flex-col md:flex-row md:items-center justify-between gap-4">
+        <div class="flex-1">
+          <label class="block text-sm font-semibold text-slate-700 mb-2">Select Train to view schedule</label>
+          <div class="relative w-full max-w-md" id="train-wrapper">
+            <div class="relative">
+              <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                <i data-lucide="search" class="h-5 w-5 text-emerald-600"></i>
+              </div>
+              <input type="text" id="train-input" class="block w-full pl-10 pr-3 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 bg-white shadow-sm text-slate-900 transition-all outline-none" placeholder="Search train name" autocomplete="off">
+            </div>
+            <ul id="train-dropdown" class="hidden absolute z-10 mt-1 w-full bg-white shadow-lg max-h-60 rounded-md py-1 text-base ring-1 ring-black ring-opacity-5 overflow-auto focus:outline-none sm:text-sm"></ul>
+            <select id="train-select" class="hidden"></select>
+          </div>
+        </div>
+
+        <div id="train-info-box" class="hidden bg-emerald-50 p-4 rounded-lg border border-emerald-100 flex items-start space-x-3">
+          <i data-lucide="info" class="w-5 h-5 text-emerald-600 flex-shrink-0 mt-0.5"></i>
+          <div>
+            <p class="text-sm font-semibold text-slate-800">Route: <span id="train-route-display" class="text-emerald-700"></span></p>
+            <p class="text-sm text-slate-700 font-bold mt-1">সাপ্তাহিক বন্ধঃ <span id="train-offday-display" class="text-red-500"></span></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="overflow-x-auto">
+        <table class="w-full text-left border-collapse">
+          <thead>
+            <tr class="bg-slate-100 text-slate-700 text-sm uppercase tracking-wider">
+              <th class="px-6 py-4 font-semibold">Station Name</th>
+              <th class="px-6 py-4 font-semibold">Arrival Time</th>
+              <th class="px-6 py-4 font-semibold">Departure Time</th>
+            </tr>
+          </thead>
+          <tbody id="schedule-tbody" class="divide-y divide-slate-200">
+            <!-- Rows populated by JS -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- Instructions / Features Section -->
+  <div class="bg-white py-16 mt-12 border-t border-slate-200">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+        <div class="p-6">
+          <div class="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-4 text-emerald-600">
+            <i data-lucide="search" class="w-8 h-8"></i>
+          </div>
+          <h3 class="text-xl font-bold text-slate-800 mb-2">Search</h3>
+          <p class="text-slate-600">Choose your origin, destination, journey dates and search for trains</p>
+        </div>
+        <div class="p-6">
+          <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4 text-blue-600">
+            <i data-lucide="check-circle-2" class="w-8 h-8"></i>
+          </div>
+          <h3 class="text-xl font-bold text-slate-800 mb-2">Select</h3>
+          <p class="text-slate-600">Select your desired trip and choose your preferred seats</p>
+        </div>
+        <div class="p-6">
+          <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4 text-purple-600">
+            <i data-lucide="clock" class="w-8 h-8"></i>
+          </div>
+          <h3 class="text-xl font-bold text-slate-800 mb-2">Pay & Travel</h3>
+          <p class="text-slate-600">Pay securely online via cards or mobile banking and enjoy your trip</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-slate-900 text-slate-300 py-12 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div class="col-span-1 md:col-span-2">
+        <div class="flex items-center space-x-2 mb-4">
+          <i data-lucide="train" class="h-8 w-8 text-emerald-500"></i>
+          <span class="font-bold text-2xl text-white tracking-tight">BD<span class="text-emerald-500">Railway</span></span>
+        </div>
+        <p class="text-slate-400 max-w-sm">
+          The ultimate platform for booking train tickets online. Fast, secure, and highly reliable.
+        </p>
+      </div>
+      <div>
+        <h4 class="text-white font-bold mb-4 uppercase text-sm tracking-wider">Quick Links</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#" class="hover:text-emerald-400 transition-colors">Home</a></li>
+          <li><a href="#" class="hover:text-emerald-400 transition-colors">Login</a></li>
+          <li><a href="#" class="hover:text-emerald-400 transition-colors">Verify Ticket</a></li>
+          <li><a href="#" class="hover:text-emerald-400 transition-colors">Train Schedule</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-white font-bold mb-4 uppercase text-sm tracking-wider">Help & Support</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#" class="hover:text-emerald-400 transition-colors">Contact Us</a></li>
+          <li><a href="#" class="hover:text-emerald-400 transition-colors">Terms and Conditions</a></li>
+          <li><a href="#" class="hover:text-emerald-400 transition-colors">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-4 mt-12 pt-8 border-t border-slate-800 text-sm text-center text-slate-500">
+      <p>© 2026 Railway E-Ticketing Service. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Vanilla JavaScript Functionality -->
+  <script>
+    // --- MOCK DATA ---
+    let STATIONS_JSON = [];
+
+    const CLASSES_JSON = [
+      { id: 'ac_b', name: 'AC Berth' },
+      { id: 'ac_s', name: 'AC Seat' },
+      { id: 'snigdha', name: 'Snigdha' },
+      { id: 's_chair', name: 'S_Chair' },
+      { id: 'shovan', name: 'Shovan' }
+    ];
+
+    let TRAIN_SCHEDULES_JSON = [];
+
+    // --- INITIALIZATION ---
+    document.addEventListener('DOMContentLoaded', () => {
+      // Init Icons
+      lucide.createIcons();
+
+      // Populate Class Select
+      const classSelect = document.getElementById('class-select');
+      CLASSES_JSON.forEach(cls => {
+        const option = document.createElement('option');
+        option.value = cls.id;
+        option.textContent = cls.name;
+        classSelect.appendChild(option);
+      });
+      classSelect.value = 's_chair'; // Default value
+
+      const trainSelect = document.getElementById('train-select');
+      setupTrainAutocomplete('train-input', 'train-dropdown', 'train-wrapper', 'train-select');
+      loadTrainSchedules(trainSelect);
+
+      // Setup Autocomplete Inputs
+      setupAutocomplete('from-input', 'from-dropdown', 'from-wrapper', 'to-input');
+      setupAutocomplete('to-input', 'to-dropdown', 'to-wrapper', 'from-input');
+      loadStations();
+
+      // Form Submit Event
+      document.getElementById('search-form').addEventListener('submit', handleSearch);
+
+      // Train Selection Event
+      trainSelect.addEventListener('change', (e) => {
+        renderTrainSchedule(e.target.value);
+      });
+
+    });
+
+    // --- FUNCTIONALITY ---
+
+    function setupTrainAutocomplete(inputId, dropdownId, wrapperId, selectId) {
+      const input = document.getElementById(inputId);
+      const dropdown = document.getElementById(dropdownId);
+      const wrapper = document.getElementById(wrapperId);
+      const select = selectId ? document.getElementById(selectId) : null;
+
+      function normalizeValue(value) {
+        return (value || '').trim().toLowerCase();
+      }
+
+      function renderList(options) {
+        dropdown.innerHTML = '';
+        if (options.length === 0) {
+          dropdown.classList.add('hidden');
+          return;
+        }
+
+        options.forEach(train => {
+          const li = document.createElement('li');
+          li.className = 'cursor-pointer select-none relative py-2 pl-3 pr-9 hover:bg-emerald-50 text-slate-900';
+          li.innerHTML = `
+            <div class="flex items-center justify-between">
+              <span class="font-medium">${train.name}</span>
+              <span class="text-xs text-slate-500">${train.id}</span>
+            </div>
+          `;
+
+          li.addEventListener('mousedown', () => {
+            input.value = train.name;
+            dropdown.classList.add('hidden');
+            if (select) {
+              select.value = train.id;
+              select.dispatchEvent(new Event('change'));
+            } else {
+              renderTrainSchedule(train.id);
+            }
+          });
+
+          dropdown.appendChild(li);
+        });
+        dropdown.classList.remove('hidden');
+      }
+
+      function getFilteredTrains(queryValue) {
+        const val = normalizeValue(queryValue);
+        return TRAIN_SCHEDULES_JSON.filter(train => {
+          const name = normalizeValue(train?.name);
+          const route = normalizeValue(train?.route);
+          if (!val) return true;
+          return name.includes(val) || route.includes(val);
+        });
+      }
+
+      input.addEventListener('input', (e) => {
+        renderList(getFilteredTrains(e.target.value));
+      });
+
+      input.addEventListener('focus', () => {
+        renderList(getFilteredTrains(input.value));
+      });
+
+      document.addEventListener('mousedown', (event) => {
+        if (!wrapper.contains(event.target)) {
+          dropdown.classList.add('hidden');
+        }
+      });
+    }
+
+    async function loadTrainSchedules(trainSelect) {
+      try {
+        const res = await fetch('./train_routes.json', { cache: 'no-store' });
+        if (!res.ok) throw new Error(`Failed to load train_routes.json (${res.status})`);
+        const payload = await res.json();
+        const rawDataList = Array.isArray(payload?.trains) ? payload.trains : [];
+        const trains = rawDataList
+          .map((data, idx) => convertTrainDataToSchedule(data, idx))
+          .filter(Boolean);
+
+        TRAIN_SCHEDULES_JSON = trains;
+
+        if (trainSelect) {
+          trainSelect.innerHTML = '';
+          TRAIN_SCHEDULES_JSON.forEach(train => {
+            const option = document.createElement('option');
+            option.value = train.id;
+            option.textContent = train.name;
+            trainSelect.appendChild(option);
+          });
+        }
+
+        const trainInput = document.getElementById('train-input');
+        const currentValue = String(trainInput?.value || '').trim().toLowerCase();
+        const matched = currentValue
+          ? TRAIN_SCHEDULES_JSON.find(t => String(t?.name || '').trim().toLowerCase() === currentValue)
+          : null;
+        const selected = matched || TRAIN_SCHEDULES_JSON[0] || null;
+        if (selected) {
+          if (trainSelect) trainSelect.value = selected.id;
+          if (trainInput && !trainInput.value.trim()) trainInput.value = selected.name;
+          renderTrainSchedule(selected.id);
+        } else {
+          renderTrainSchedule('');
+        }
+      } catch (err) {
+        TRAIN_SCHEDULES_JSON = [];
+        if (trainSelect) trainSelect.innerHTML = '';
+        renderTrainSchedule('');
+      }
+    }
+
+    function convertTrainDataToSchedule(data, idx) {
+      if (!data || typeof data !== 'object') return null;
+      const trainName = (data.train_name || '').trim();
+      const routes = Array.isArray(data.routes) ? data.routes : [];
+      if (!trainName || routes.length === 0) return null;
+
+      const idMatch = trainName.match(/\((\d+)\)/);
+      const id = idMatch ? idMatch[1] : String(idx + 1);
+
+      const startCity = normalizeDisplayCity(routes[0]?.city);
+      const endCity = normalizeDisplayCity(routes[routes.length - 1]?.city);
+      const route = startCity && endCity ? `${startCity} - ${endCity}` : '';
+
+      const days = Array.isArray(data.days) ? data.days : [];
+      const offDay = computeOffDay(days);
+
+      const stations = routes.map((r) => {
+        const name = normalizeDisplayCity(r?.city);
+        const arrival = r?.arrival_time ? cleanupTime(r.arrival_time) : 'Starting';
+        const departure = r?.departure_time ? cleanupTime(r.departure_time) : 'Destination';
+        return { name, arrival, departure };
+      });
+
+      return { id, name: trainName, route, offDay, stations };
+    }
+
+    function normalizeDisplayCity(value) {
+      return String(value || '').replace(/_/g, ' ').trim();
+    }
+
+    function cleanupTime(value) {
+      return String(value || '').replace(/\s*BST\s*$/i, '').trim();
+    }
+
+    function computeOffDay(days) {
+      const dayMap = {
+        Sat: 'শনিবার',
+        Sun: 'রবিবার',
+        Mon: 'সোমবার',
+        Tue: 'মঙ্গলবার',
+        Wed: 'বুধবার',
+        Thu: 'বৃহস্পতিবার',
+        Fri: 'শুক্রবার'
+      };
+
+      const all = ['Sat', 'Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri'];
+
+      function normalizeDayToken(value) {
+        const t = String(value || '').trim().toLowerCase();
+        if (!t) return '';
+        const abbr = t.slice(0, 3);
+        const norm = abbr.charAt(0).toUpperCase() + abbr.slice(1);
+        return dayMap[norm] ? norm : '';
+      }
+
+      const set = new Set((days || []).map(normalizeDayToken).filter(Boolean));
+      const missing = all.filter(d => !set.has(d));
+      if (missing.length === 0) return 'প্রতিদিন চলে';
+      return missing.map(d => dayMap[d]).join(', ');
+    }
+
+    async function loadStations() {
+      try {
+        const res = await fetch('./station_name.json', { cache: 'no-store' });
+        if (!res.ok) throw new Error(`Failed to load station_name.json (${res.status})`);
+        const rawStations = await res.json();
+
+        const seen = new Set();
+        const stations = [];
+
+        rawStations.forEach((s) => {
+          if (!s || s.is_enable_for_web !== 1) return;
+          const name = (s.city_name || '').trim();
+          if (!name) return;
+          const key = name.toLowerCase();
+          if (seen.has(key)) return;
+          seen.add(key);
+          stations.push({
+            id: String(s.city_id ?? name),
+            name,
+            code: ''
+          });
+        });
+
+        stations.sort((a, b) => a.name.localeCompare(b.name));
+        STATIONS_JSON = stations;
+
+        const fromInput = document.getElementById('from-input');
+        const toInput = document.getElementById('to-input');
+        if (document.activeElement === fromInput) fromInput.dispatchEvent(new Event('input'));
+        if (document.activeElement === toInput) toInput.dispatchEvent(new Event('input'));
+      } catch (err) {
+        STATIONS_JSON = [];
+      }
+    }
+
+    function setupAutocomplete(inputId, dropdownId, wrapperId, otherInputId) {
+      const input = document.getElementById(inputId);
+      const dropdown = document.getElementById(dropdownId);
+      const wrapper = document.getElementById(wrapperId);
+      const otherInput = otherInputId ? document.getElementById(otherInputId) : null;
+
+      function normalizeStationName(value) {
+        return (value || '').trim().toLowerCase();
+      }
+
+      function renderList(options) {
+        dropdown.innerHTML = '';
+        if (options.length === 0) {
+          dropdown.classList.add('hidden');
+          return;
+        }
+
+        options.forEach(station => {
+          const li = document.createElement('li');
+          li.className = 'cursor-pointer select-none relative py-2 pl-3 pr-9 hover:bg-emerald-50 text-slate-900';
+          li.innerHTML = `
+            <div class="flex items-center justify-between">
+              <span class="font-medium">${station.name}</span>
+              <span class="text-xs text-slate-500">${station.code || ''}</span>
+            </div>
+          `;
+          
+          li.addEventListener('mousedown', (e) => {
+            // Use mousedown instead of click to fire before input's blur
+            input.value = station.name;
+            dropdown.classList.add('hidden');
+            if (otherInput && normalizeStationName(otherInput.value) === normalizeStationName(station.name)) {
+              otherInput.value = '';
+            }
+          });
+
+          dropdown.appendChild(li);
+        });
+        dropdown.classList.remove('hidden');
+      }
+
+      function getFilteredStations(queryValue) {
+        const val = normalizeStationName(queryValue);
+        const excluded = otherInput ? normalizeStationName(otherInput.value) : '';
+        return STATIONS_JSON.filter(station => {
+          const stationName = normalizeStationName(station?.name);
+          if (excluded && stationName === excluded) return false;
+          return stationName.includes(val);
+        });
+      }
+
+      input.addEventListener('input', (e) => {
+        renderList(getFilteredStations(e.target.value));
+      });
+
+      input.addEventListener('focus', () => {
+        renderList(getFilteredStations(input.value));
+      });
+
+      // Hide dropdown when clicking outside
+      document.addEventListener('mousedown', (event) => {
+        if (!wrapper.contains(event.target)) {
+          dropdown.classList.add('hidden');
+        }
+      });
+    }
+
+    function handleSwap() {
+      const fromInput = document.getElementById('from-input');
+      const toInput = document.getElementById('to-input');
+      const temp = fromInput.value;
+      fromInput.value = toInput.value;
+      toInput.value = temp;
+      if (
+        fromInput.value.trim() &&
+        fromInput.value.trim().toLowerCase() === toInput.value.trim().toLowerCase()
+      ) {
+        toInput.value = '';
+      }
+    }
+
+    function handleSearch(e) {
+      e.preventDefault();
+      const from = document.getElementById('from-input').value;
+      const to = document.getElementById('to-input').value;
+      const date = document.getElementById('date-input').value;
+      const seatClass = document.getElementById('class-select').value;
+
+      if (from.trim() && to.trim() && from.trim().toLowerCase() === to.trim().toLowerCase()) {
+        alert('From and To station cannot be the same.');
+        return;
+      }
+      
+      alert(`Searching trains from ${from || 'Any'} to ${to || 'Any'} on ${date} for class ${seatClass}`);
+    }
+
+    function renderTrainSchedule(trainId) {
+      const train = TRAIN_SCHEDULES_JSON.find(t => t.id === trainId);
+      const infoBox = document.getElementById('train-info-box');
+      const tbody = document.getElementById('schedule-tbody');
+
+      if (!train) {
+        infoBox.classList.add('hidden');
+        tbody.innerHTML = '';
+        return;
+      }
+
+      // Update Info Box
+      document.getElementById('train-route-display').textContent = train.route;
+      document.getElementById('train-offday-display').textContent = train.offDay;
+      infoBox.classList.remove('hidden');
+
+      // Render Schedule Table
+      tbody.innerHTML = '';
+      train.stations.forEach((station, idx) => {
+        const isFirst = idx === 0;
+        const isLast = idx === train.stations.length - 1;
+        
+        let dotColorClass = 'bg-blue-400';
+        if (isFirst) dotColorClass = 'bg-emerald-500';
+        else if (isLast) dotColorClass = 'bg-red-500';
+
+        const arrivalHtml = (station.arrival === 'Starting' || station.arrival === 'Destination') 
+          ? `<span class="text-slate-400 italic text-sm">${station.arrival}</span>` 
+          : station.arrival;
+
+        const departureHtml = (station.departure === 'Starting' || station.departure === 'Destination') 
+          ? `<span class="text-slate-400 italic text-sm">${station.departure}</span>` 
+          : station.departure;
+
+        const tr = document.createElement('tr');
+        tr.className = 'hover:bg-slate-50 transition-colors';
+        tr.innerHTML = `
+          <td class="px-6 py-4 font-medium text-slate-900 flex items-center space-x-2">
+            <div class="w-2 h-2 rounded-full ${dotColorClass}"></div>
+            <span>${station.name}</span>
+          </td>
+          <td class="px-6 py-4 text-slate-600 font-mono">${arrivalHtml}</td>
+          <td class="px-6 py-4 text-slate-600 font-mono">${departureHtml}</td>
+        `;
+        tbody.appendChild(tr);
+      });
+    }
+  </script>
+</body>
+</html>
