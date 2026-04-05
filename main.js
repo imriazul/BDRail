@@ -425,12 +425,12 @@ function renderTrainSchedule(trainId) {
     const tr = document.createElement('tr');
     tr.className = 'hover:bg-slate-50 transition-colors';
     tr.innerHTML = `
-      <td class="px-6 py-4 font-medium text-slate-900 flex items-center space-x-2">
+      <td class="px-4 py-4 font-medium text-slate-900 flex items-center space-x-2">
         <div class="w-2 h-2 rounded-full ${dotColorClass}"></div>
         <span>${station.name}</span>
       </td>
-      <td class="px-6 py-4 text-slate-600 font-mono">${arrivalHtml}</td>
-      <td class="px-6 py-4 text-slate-600 font-mono">${departureHtml}</td>
+      <td class="px-4 py-4 text-slate-600 font-mono">${arrivalHtml}</td>
+      <td class="px-4 py-4 text-slate-600 font-mono">${departureHtml}</td>
     `;
     tbody.appendChild(tr);
   });
