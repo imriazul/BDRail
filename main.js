@@ -216,6 +216,7 @@ function convertTrainDataToSchedule(data, idx) {
   const startCity = normalizeDisplayCity(routes[0]?.city);
   const endCity = normalizeDisplayCity(routes[routes.length - 1]?.city);
   const route = startCity && endCity ? `${startCity} - ${endCity}` : '';
+  const duration = String(data.total_duration || '').trim() || 'N/A';
 
   const days = Array.isArray(data.days) ? data.days : [];
   const offDay = computeOffDay(days);
@@ -229,7 +230,7 @@ function convertTrainDataToSchedule(data, idx) {
     return { name, arrival, departure };
   });
 
-  return { id, name: trainName, route, offDay, stations };
+  return { id, name: trainName, route, duration, offDay, stations };
 }
 
 function normalizeDisplayCity(value) {
@@ -238,6 +239,16 @@ function normalizeDisplayCity(value) {
 
 function cleanupTime(value) {
   return String(value || '').replace(/\s*BST\s*$/i, '').trim();
+}
+
+function formatDuration(value) {
+  const v = String(value || '').trim();
+  if (!v) return 'N/A';
+  const m = v.match(/^(\d{1,2})\s*:\s*(\d{2})$/);
+  if (!m) return v;
+  const hours = m[1].padStart(2, '0');
+  const minutes = m[2];
+  return `${hours}h ${minutes}m`;
 }
 
 function computeOffDay(days) {
@@ -408,6 +419,8 @@ function renderTrainSchedule(trainId) {
   }
 
   document.getElementById('train-route-display').textContent = train.route;
+  const durationEl = document.getElementById('train-duration-display');
+  if (durationEl) durationEl.textContent = formatDuration(train.duration);
   document.getElementById('train-offday-display').textContent = train.offDay;
   infoBox.classList.remove('hidden');
 
@@ -431,14 +444,14 @@ function renderTrainSchedule(trainId) {
     const tr = document.createElement('tr');
     tr.className = 'hover:bg-slate-50 transition-colors';
     tr.innerHTML = `
-      <td class="px-3 sm:px-4 py-3 sm:py-4 font-medium text-slate-900">
+      <td class="px-2 sm:px-6 py-2 sm:py-4 font-medium text-slate-900">
         <div class="flex items-center space-x-2 min-w-0">
         <div class="w-2 h-2 rounded-full ${dotColorClass}"></div>
         <span class="min-w-0 break-words">${station.name}</span>
         </div>
       </td>
-      <td class="px-3 sm:px-4 py-3 sm:py-4 text-slate-600 font-mono whitespace-nowrap">${arrivalHtml}</td>
-      <td class="px-3 sm:px-4 py-3 sm:py-4 text-slate-600 font-mono whitespace-nowrap">${departureHtml}</td>
+      <td class="px-2 sm:px-6 py-2 sm:py-4 text-slate-600 font-mono whitespace-nowrap">${arrivalHtml}</td>
+      <td class="px-2 sm:px-6 py-2 sm:py-4 text-slate-600 font-mono whitespace-nowrap">${departureHtml}</td>
     `;
     tbody.appendChild(tr);
   });

@@ -160,6 +160,7 @@
           <i data-lucide="info" class="w-5 h-5 text-emerald-600 flex-shrink-0 mt-0.5"></i>
           <div>
             <p class="text-sm font-semibold text-slate-800">Route: <span id="train-route-display" class="text-emerald-700"></span></p>
+            <p class="text-sm font-semibold text-slate-800">Total Duration: <span id="train-duration-display" class="text-red-400"></span></p>
             <p class="text-sm text-slate-700 font-bold mt-1">সাপ্তাহিক বন্ধঃ <span id="train-offday-display" class="text-red-500"></span></p>
           </div>
         </div>
@@ -169,9 +170,9 @@
         <table class="w-full text-left border-collapse table-fixed">
           <thead>
             <tr class="bg-slate-100 text-slate-700 text-xs sm:text-sm uppercase tracking-wider">
-              <th class="px-3 sm:px-4 py-3 sm:py-4 font-semibold w-1/2">Station Name</th>
-              <th class="px-3 sm:px-4 py-3 sm:py-4 font-semibold w-1/4">Arrival</th>
-              <th class="px-3 sm:px-4 py-3 sm:py-4 font-semibold w-1/4">Departure</th>
+              <th class="px-2 sm:px-6 py-2 sm:py-4 font-semibold w-2/5 sm:w-1/3">Station Name</th>
+              <th class="px-2 sm:px-6 py-2 sm:py-4 font-semibold w-1/4 sm:w-1/3">Arrival</th>
+              <th class="px-2 sm:px-6 py-2 sm:py-4 font-semibold w-1/3 sm:w-1/3">Departure</th>
             </tr>
           </thead>
           <tbody id="schedule-tbody" class="divide-y divide-slate-200">
