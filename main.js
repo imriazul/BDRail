@@ -1,12 +1,16 @@
-// --- MOCK DATA ---
 let STATIONS_JSON = [];
 
 const CLASSES_JSON = [
-  { id: 'ac_b', name: 'AC Berth' },
-  { id: 'ac_s', name: 'AC Seat' },
-  { id: 'snigdha', name: 'Snigdha' },
-  { id: 's_chair', name: 'S_Chair' },
-  { id: 'shovan', name: 'Shovan' }
+  { id: 'AC_B', name: 'AC_B' },
+  { id: 'AC_S', name: 'AC_S' },
+  { id: 'SNIGDHA', name: 'SNIGDHA' },
+  { id: 'F_BERTH', name: 'F_BERTH' },
+  { id: 'F_SEAT', name: 'F_SEAT' },
+  { id: 'F_CHAIR', name: 'F_CHAIR' },
+  { id: 'S_CHAIR', name: 'S_CHAIR' },
+  { id: 'SHOVAN', name: 'SHOVAN' },
+  { id: 'SHULOV', name: 'SHULOV' },
+  { id: 'AC_CHAIR', name: 'AC_CHAIR' }
 ];
 
 let TRAIN_SCHEDULES_JSON = [];
@@ -22,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
     option.textContent = cls.name;
     classSelect.appendChild(option);
   });
-  classSelect.value = 's_chair';
+  classSelect.value = 'AC_B';
 
   const trainSelect = document.getElementById('train-select');
   setupTrainAutocomplete('train-input', 'train-dropdown', 'train-wrapper', 'train-select');
@@ -216,10 +220,12 @@ function convertTrainDataToSchedule(data, idx) {
   const days = Array.isArray(data.days) ? data.days : [];
   const offDay = computeOffDay(days);
 
-  const stations = routes.map((r) => {
+  const stations = routes.map((r, routeIdx) => {
+    const isFirst = routeIdx === 0;
+    const isLast = routeIdx === routes.length - 1;
     const name = normalizeDisplayCity(r?.city);
-    const arrival = r?.arrival_time ? cleanupTime(r.arrival_time) : 'Starting';
-    const departure = r?.departure_time ? cleanupTime(r.departure_time) : 'Destination';
+    const arrival = isFirst ? 'Starting' : (r?.arrival_time ? cleanupTime(r.arrival_time) : 'N/A');
+    const departure = isLast ? 'Destination' : (r?.departure_time ? cleanupTime(r.departure_time) : 'N/A');
     return { name, arrival, departure };
   });
 
@@ -414,23 +420,25 @@ function renderTrainSchedule(trainId) {
     if (isFirst) dotColorClass = 'bg-emerald-500';
     else if (isLast) dotColorClass = 'bg-red-500';
 
-    const arrivalHtml = (station.arrival === 'Starting' || station.arrival === 'Destination') 
+    const arrivalHtml = (station.arrival === 'Starting' || station.arrival === 'Destination' || station.arrival === 'N/A') 
       ? `<span class="text-slate-400 italic text-sm">${station.arrival}</span>` 
       : station.arrival;
 
-    const departureHtml = (station.departure === 'Starting' || station.departure === 'Destination') 
+    const departureHtml = (station.departure === 'Starting' || station.departure === 'Destination' || station.departure === 'N/A') 
       ? `<span class="text-slate-400 italic text-sm">${station.departure}</span>` 
       : station.departure;
 
     const tr = document.createElement('tr');
     tr.className = 'hover:bg-slate-50 transition-colors';
     tr.innerHTML = `
-      <td class="px-4 py-4 font-medium text-slate-900 flex items-center space-x-2">
+      <td class="px-3 sm:px-4 py-3 sm:py-4 font-medium text-slate-900">
+        <div class="flex items-center space-x-2 min-w-0">
         <div class="w-2 h-2 rounded-full ${dotColorClass}"></div>
-        <span>${station.name}</span>
+        <span class="min-w-0 break-words">${station.name}</span>
+        </div>
       </td>
-      <td class="px-4 py-4 text-slate-600 font-mono">${arrivalHtml}</td>
-      <td class="px-4 py-4 text-slate-600 font-mono">${departureHtml}</td>
+      <td class="px-3 sm:px-4 py-3 sm:py-4 text-slate-600 font-mono whitespace-nowrap">${arrivalHtml}</td>
+      <td class="px-3 sm:px-4 py-3 sm:py-4 text-slate-600 font-mono whitespace-nowrap">${departureHtml}</td>
     `;
     tbody.appendChild(tr);
   });
